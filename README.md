@@ -61,6 +61,20 @@ require("babel-core").transform("code", {
 });
 ```
 
+### react-remove-prop-types
+
+[babel-plugin-transform-react-remove-prop-types](https://github.com/oliviertassinari/babel-plugin-transform-react-remove-prop-types) is enabled only
+when react is in use and you are setting `NODE_ENV` or `BABEL_ENV` environment variables to 'production'. Options for this plugin can be passed like
+so
+
+```json
+{
+  "presets": [["wtw-im", {
+    "react": { "mode": "wrap" }
+  }]]
+}
+```
+
 ### extract-format-message
 
 The [extract-format-message](https://github.com/format-message/format-message/tree/master/packages/babel-plugin-extract-format-message) plugin writes
